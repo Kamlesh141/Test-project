@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio Website</title>
+     <link rel="stylesheet" href="second.css">
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+     *{
+     padding: 0px;margin: 0;box-sizing: border-box;
+}
+.container{
+
+}
+.con{
+     background-color:cadetblue;
+     display: flex;
+     width:100%;
+     height:100%;
+     justify-content:space-between;
+     /* border:2px solid red; */
+     align-items: center;
+     padding: 15px 40px;
+
+}
+.p1{
+     width:40%;
+font-size: 20px;
+color: skyblue;
+     margin-left: 4vw;
+/* border: 1px solid red; */
+}
+.p2{
+     font-size: 1.5vw;
+     display: flex;
+     justify-content:space-evenly;
+     width:50%;
+/* border: 1px solid red; */
+}
+.p2 a{
+font-size:20px;
+text-decoration: none;
+}
+.right{
+width:50vw;
+height:89vh;
+background-color:cadetblue;
+}
+.header{
+     display: flex;
+}
+.left{
+width:50vw;
+height:89vh;
+background-color:cadetblue;
+position: relative;
+}
+.l1{
+position: absolute;
+top:50%;
+left:55%;
+line-height: 20px;
+transform: translate(-50%,-50%);
+}
+.And{
+     width:40vw;
+     /* border: 1px solid blue; */
+     font-size: 23px;
+     margin-bottom: 20px;
+}
+.john{
+     margin-bottom: 5px;
+     width:20vw;
+     font-size:40px;
+     padding: 12px 2px;
+     background-color: aqua;
+}
+.hello{
+     color:white;
+     font-size: 25px;
+     margin-bottom: 5px;
+     font-weight: bold;
+}
+.Lorem{
+     /* border:1px solid black; */
+     width:41vw;
+     margin-bottom: 20px;
+     color: white;
+     /* padding: 20px; */
+/* background-color: black; */
+}
+.icon{
+display: flex;
+gap:2vw;
+     text-decoration: none;
+margin-bottom: 30px;
+}
+.icon i{
+border: 2px solid cyan;
+background-color: black;
+border-radius:50%;
+color:cyan;
+padding: 5px;
+}
+.btn{
+     padding: 10px 30px 5px;
+     background-color: cyan;
+     font-size: 20px;
+     font-weight: bold;
+     border: none;
+     border-radius: 30px;
+     box-shadow: 5 5 10px rgba(0,0,0,0.4);
+}
+.img{
+     margin:60px 50px;
+     width:30vw;
+     height:60vh;
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+     border-radius: 50%;
+     border:2px solid cyan;
+}
+img{
+     border-radius: 50%;
+     width:100%; height:100%; 
+object-fit: cover;    
+}
+@media (max-width:600px){
+.p2{
+     display: none;
+}
+.left {
+     width:100%;
+     position: relative;
+     /* border:1px solid red; */
+}
+.left .l1{
+     position: absolute;
+     top:40%;
+     left:45%;
+     /* line-height: 20px; */
+     width:70vw;
+     height:auto;
+}
+.left .l1 .hello{
+     
+     font-size: 20px;
+}
+.left .l1 .john{
+     /* line-height: 25px; */
+     width:70vw;
+     font-size:34px;
+     box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+margin-bottom: 20px;
+}
+.left .l1 .And{
+     width:79vw;
+     /* line-height: 30px; */
+     font-size: 20px;
+}
+.left .l1 .Lorem{
+     width:78vw;
+margin-bottom: 25px;
+     font-size: 12px;
+}
+.left .l1 .icon{
+     text-decoration: none;
+     margin-bottom: 40px;
+}
+.btn{
+     box-shadow: 0px 0px 5px rgba(0,0,0.5);
+text-align: center;
+}
+.right .img{
+width:90%;
+height:80%;
+margin:0px auto;
+text-align:cennter;
+}
+.header{
+     flex-direction: column;
+}
+.right{
+     /* border:2px solid red; */
+     position: relative;
+width:100%;
+height:50vh
+}
+}
+</style>
+<body>    
+     <div class="container">
+          <div class="con">
+<div class="p1">
+<h2>Portfolio</h2>
+          </div>
+          <div class="p2">
+               <a href="#">Home</a>
+               <a href="#">About</a>
+               <a href="#">Skill</a>
+               <a href="#">Portfolio</a>
+               <a href="#">Contact</a>
+          </div>
+          <i class="ri-menu-3-line"></i>
+          </div>          
+          <div class="header">
+               <div class="left">
+                    <div class="l1">
+
+                         <p class="hello">Hello,It's Me</p>
+                         <h2 class="john">John Kendric</h2>
+                         <h4 class="And">And I'm a Froentend Developer</h4>
+                         <p class="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis neque fuga cumque quidem beatae sequi nobis. Provident magnam quis quidem!</p>
+                         <div class="icon">
+                              <a href="http://"><i class="ri-facebook-circle-line"></i></a>
+                              <a href=""><i class="ri-twitter-fill"></i></a>
+                              <a href="">
+                              <i class="ri-instagram-line"></i>
+                              </a>
+                              <a href="">
+                              <i class="ri-linkedin-box-fill"></i>
+                              </a>
+                         </div>
+                         <button class="btn">Download Cv</button>
+                    </div>
+          </div>
+          <div class="right">
+<div class="img">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Qv5s5REahX2Vcj11jPnU1ibiEUfTc-VMAQ&s"  alt=""/>
+</div>
+          </div>
+          </div>
+     </div>
+</body>
+</html>
