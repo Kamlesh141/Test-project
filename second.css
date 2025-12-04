@@ -164,19 +164,21 @@ display: flex;
 flex-wrap: wrap;
 /* background-color: red; */
 justify-content: space-evenly;
-row-gap:50px;
+row-gap:20px;
 }
 .project .pr1{
      border-radius: 20px;
      display: flex;
      justify-content: center;
      border:2px solid black;
-     width:40vw;
+/* align-items: center; */
+     width:30vw;
      height:60vh;
 }
 .MP{
      text-align:center;
      margin:10vw;
+     /* background-color: red; */
      color:cadetblue;
      font-size: 35px;
      text-shadow: 3px 3px 10px rgba(0,0,0,0.2);
@@ -191,17 +193,18 @@ button {
           }
           #inpu {
                padding: 6px;
-               margin-bottom: 20px;
+               margin-bottom: 10px;
                border-radius: 5px;
                border: 1px solid #ccc;
           }
           #io {
-               width:20vw;
-               height:40vh;
+               object-fit: cover;
+               width:15vw;
+               height:30vh;
                background-color: red;
            box-shadow: 1px 2px 10px rgba(0,0,0,0.4);
                border-radius: 10px;
-               background-position: center;
+               /* background-position: center; */
                /* margin-top: 20px; */
           }
           nav{
@@ -216,8 +219,8 @@ box-shadow: 0px 0px 10px rgba(174, 161, 161, 0.6);
                align-items: center;
           }
           #QQ{
-               margin:5vw;
-               margin-bottom: 30px;
+               margin:2vw;
+               margin-bottom: 10px;
           }
           .box{
 box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
@@ -324,11 +327,11 @@ flex-wrap: wrap;
 }
 .project{
      flex-wrap:wrap;
-     /* background-color: aqua; */
+    /* background-color: aqua; */
 }
 #inpu{
      margin-left:30px;
-     margin-bottom: 40px;
+     margin-bottom: 4px;
 }
 .project .pr1{
      justify-content: center;
@@ -337,12 +340,9 @@ background-color: aliceblue;
 width:100%;
 }
 #io{
- width:30vw;
- /* object-fit: contain; */
- height:30vh;
+height:200px;
 margin-left: 30px;
-/* margin-bottom: 20px; */
- width:65vw;     
+ width:200px;     
 }
 .box{
      width:60vw;
