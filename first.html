@@ -100,8 +100,14 @@
                
                <!-- <button class="bbtt">lick</button> -->
           </div>
-          <div class="pr1"></div>
-          <div class="pr1"></div>
+          <div class="pr1">
+               <div class="kk">
+
+                    <button class="yy">click</button>
+               </div>
+          </div>
+          <div class="pr1">
+          </div>
           <div class="pr1"></div>
           <div class="pr1"></div>
      </div>
@@ -172,6 +178,28 @@ a.addEventListener('click',()=>
      yu.style.backgroundColor=winner.color;
      yu.innerHTML=winner.Name;
      nav.style.backgroundColor=winner.bg;
+})
+
+</script>
+<script>
+     const zx=document.querySelector(".yy");
+     const jk=document.querySelector(".kk");
+zx.addEventListener('click',()=>{
+     var dvv=document.createElement('div');
+     var x=Math.random()*100;
+     var y=Math.random()*100;
+     var t1=Math.floor(Math.random()*265);
+     var t2=Math.floor(Math.random()*265);
+     var t3=Math.floor(Math.random()*265);
+     dvv.style.width='50px';
+     dvv.style.height='50px';
+     dvv.style.left=x+'%';
+     dvv.style.top=y+'%';
+     dvv.style.rotate=y+'deg';
+     dvv.style.position='absolute';
+     dvv.style.backgroundColor = `rgb(${t1}, ${t2}, ${t3})`;
+     dvv.style.zIndex='8'
+     jk.appendChild(dvv);
 })
 </script>
 </html>
