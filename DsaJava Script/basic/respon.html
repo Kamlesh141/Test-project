@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        padding: 15px 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 40px;
+        font-size: 18px;
+        transition: 0.3s ease;
+    }
+
+    nav ul li {
+        list-style: none;
+        cursor: pointer;
+    }
+
+    #menu-icon {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 600px) {
+        nav ul {
+            display: none;
+            flex-direction: column;
+            background: #222;
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+   nav ul.show {
+            display: flex;
+            gap: 20px;
+            color: rgb(204, 184, 225);
+            background-color: black;
+            height: 50vh;
+            position: absolute;
+            top: 11%;
+            left: 0;
+            text-align: center;
+        }
+        #menu-icon {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="main">
+        <nav>
+            <h2>Portfolio</h2>
+
+            <ul id="menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+                <li>Design</li>
+            </ul>
+
+            <i class="ri-menu-line" id="menu-icon"></i>
+        </nav>
+    </div>
+
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const menu = document.getElementById("menu");
+        menuIcon.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

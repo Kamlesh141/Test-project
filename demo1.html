@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio Website</title>
+     <link rel="stylesheet" href="responsive.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+     /* RESET */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: Arial, sans-serif;
+     background: white;
+}
+
+/* NAVBAR */
+.navbar {
+     background: cadetblue;
+     padding: 12px 30px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+}
+
+.nav-links {
+     display: flex;
+     gap: 30px;
+}
+
+.nav-links a {
+     color: black;
+     text-decoration: none;
+     font-size: 18px;
+}
+
+.menu-btn {
+     display: none;
+     font-size: 30px;
+     cursor: pointer;
+}
+
+/* HERO SECTION */
+.header {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+     padding: 40px;
+     flex-wrap: wrap;
+}
+
+.left {
+     flex: 1;
+}
+
+.right {
+     flex: 1;
+     text-align: center;
+}
+
+.img {
+     width: 300px;
+     height: 300px;
+     margin: auto;
+     border: 3px solid cyan;
+     border-radius: 50%;
+     overflow: hidden;
+}
+
+.john {
+     background: aqua;
+     font-size: 40px;
+     width: fit-content;
+     padding: 10px 20px;
+     margin: 10px 0;
+}
+
+.role span {
+     color: cyan;
+}
+
+.icon i {
+     font-size: 25px;
+     margin-right: 15px;
+     border: 2px solid cyan;
+     padding: 5px;
+     border-radius: 50%;
+     background: black;
+     color: cyan;
+}
+
+.btn {
+     margin-top: 20px;
+     padding: 12px 30px;
+     background: cyan;
+     font-size: 20px;
+     border-radius: 30px;
+     border: none;
+     cursor: pointer;
+}
+
+/* SKILLS */
+.title {
+     text-align: center;
+     margin: 60px 0 30px;
+     color: cadetblue;
+     font-size: 32px;
+}
+
+.skills {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     flex-wrap: wrap;
+     padding: 0 20px;
+}
+
+.skill {
+     width: 140px;
+     background: cadetblue;
+     padding: 10px;
+     border-radius: 12px;
+     text-align: center;
+     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.skill img {
+     width: 100%;
+     height: 100px;
+     border-radius: 10px;
+}
+
+/* PROJECTS */
+.projects {
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     flex-wrap: wrap;
+     padding: 20px;
+}
+
+.project-card {
+     width: 330px;
+     padding: 20px;
+     background: white;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+     text-align: center;
+}
+
+#qr-img {
+     width: 150px;
+     height: 150px;
+     margin-top: 20px;
+}
+
+.team-box {
+     background: lightblue;
+     padding: 25px;
+     border-radius: 12px;
+     font-size: 25px;
+     margin-bottom: 15px;
+}
+
+/* ----------- MOBILE RESPONSIVE ----------- */
+@media (max-width: 768px) {
+
+     .nav-links {
+          display: none;
+          flex-direction: column;
+          background: cadetblue;
+          padding: 20px;
+          text-align: center;
+          width: 100%;
+          position: absolute;
+          top: 70px;
+          left: 0;
+     }
+
+     .nav-links.show {
+          display: flex;
+     }
+
+     .menu-btn {
+          display: block;
+     }
+
+     .header {
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .john {
+          font-size: 32px;
+     }
+
+     .skills, .projects {
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .skill {
+          width: 80%;
+     }
+
+     .project-card {
+          width: 85%;
+     }
+
+     .img {
+          width: 250px;
+          height: 250px;
+     }
+}
+
+@media (max-width: 480px) {
+
+     .john {
+          font-size: 28px;
+     }
+
+     .role {
+          font-size: 16px;
+     }
+
+     .skills .skill {
+          width: 90%;
+     }
+
+     .project-card {
+          width: 95%;
+     }
+}
+
+</style>
+<body>
+
+     <!-- NAVBAR -->
+     <header class="navbar">
+          <h2 class="logo">Portfolio</h2>
+
+          <nav class="nav-links" id="navLinks">
+               <a href="#">Home</a>
+               <a href="#">About</a>
+               <a href="#">Skills</a>
+               <a href="#">Projects</a>
+               <a href="#">Contact</a>
+          </nav>
+
+          <i class="ri-menu-3-line menu-btn" id="menuBtn"></i>
+     </header>
+
+     <!-- HEADER SECTION -->
+     <section class="header">
+          <div class="left">
+               <p class="hello">Hello, It's Me</p>
+               <h2 class="john">John Kendric</h2>
+               <h4 class="role">And I'm a <span>Frontend Developer</span></h4>
+               <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+               <div class="icon">
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+               </div>
+
+               <button class="btn">Download CV</button>
+          </div>
+
+          <div class="right">
+               <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Qv5s5REahX2Vcj11jPnU1ibiEUfTc-VMAQ&s">
+               </div>
+          </div>
+     </section>
+
+     <!-- SKILLS -->
+     <h1 class="title">My Skills</h1>
+     <div class="skills">
+          <div class="skill"><img src="https://th.bing.com/th/id/OIP.o9KlUo2gl1_IL-8ZKu1JygHaHa"><p>HTML</p></div>
+          <div class="skill"><img src="https://th.bing.com/th/id/OIP.NccvSu6Gut1HXGwUTBKYKgHaH3"><p>CSS</p></div>
+          <div class="skill"><img src="https://th.bing.com/th/id/OIP.VjxRixbZlP4MonmjOMujAAHaHa"><p>JavaScript</p></div>
+          <div class="skill"><img src="https://th.bing.com/th?q=React+Animated+Logo"><p>React</p></div>
+          <div class="skill"><img src="https://th.bing.com/th?q=Git+Logo.png"><p>Git</p></div>
+          <div class="skill"><img src="https://th.bing.com/th/id/OIP.0Cadh13AXj0nE8ki2l9XjQHaHa"><p>Github</p></div>
+     </div>
+
+     <!-- PROJECTS -->
+     <h2 class="title">My Projects</h2>
+     <div class="projects">
+          <!-- QR Code Generator -->
+          <div class="project-card qr">
+               <h3>QR Code Generator</h3>
+               <input type="text" id="qr-input" placeholder="Enter text or URL">
+               <button id="qr-btn">Generate</button>
+               <img id="qr-img" alt="">
+          </div>
+
+          <!-- Random Team Picker -->
+          <div class="project-card team">
+               <h3>Team Picker</h3>
+               <div class="team-box" id="team-box">Team</div>
+               <button id="team-btn">Pick Team</button>
+          </div>
+
+     </div>
+
+<script>
+/* Navbar Toggle */
+document.getElementById("menuBtn").onclick = () => {
+     document.getElementById("navLinks").classList.toggle("show");
+};
+
+/* QR Code Generator */
+document.getElementById("qr-btn").onclick = () => {
+     const value = document.getElementById("qr-input").value.trim();
+     if (value === "") return alert("Please enter something!");
+
+     document.getElementById("qr-img").src =
+          `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${value}`;
+};
+
+/* Random Team Picker */
+const teams = ["CSK", "RCB", "MI", "SRH", "PBKS", "RR"];
+document.getElementById("team-btn").onclick = () => {
+     const team = teams[Math.floor(Math.random() * teams.length)];
+     document.getElementById("team-box").innerText = team;
+};
+</script>
+
+</body>
+</html>

@@ -1,11 +1,14 @@
-
-.main{
+*{
+     padding: 0px;margin: 0px;box-sizing: border-box;
+}
+.main
+{
      background-color:rgb(33, 134, 150);
      width:99vw;
      height:100vh;
      display: flex;
    gap:20px;
-     align-items: center;
+   align-items: center;
      justify-content:center;
      flex-direction: column;
 }
