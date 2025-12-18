@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>random</title>
+</head>
+<style>
+     *{
+          padding: 0px;margin:0px;
+          box-sizing: border-box;
+     }
+     main{
+          padding: 10px;
+          background-color: bisque;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     /* gap:10px; */
+     }
+     .card{
+          border-radius: 10px;
+          width:19vw;
+          height:auto;
+          padding: 20px 30px;
+          text-align: center;
+          background-color:silver;
+          box-sizing: 0px 0px 10px rgba(0,0,0,0.5);
+     }
+     .card img{
+          width:10vw;
+          height:auto;
+          margin-bottom: 10px;
+          object-fit: cover;
+          border-radius: 50%;
+     }
+     h3{
+          margin-bottom: 10px;
+          font-size:20px;
+          color: green;
+          white-space: nowrap;
+     }
+     h4{
+          margin-bottom: 10px;
+          color: black;
+          font-size:20px;
+     }
+     p{
+          margin-bottom: 10px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: black;
+          font-size: 0.9em;
+     }
+     span{
+          color:red;
+          
+     }
+</style>
+<body>
+     <main>
+          <!-- <div class="card">
+
+               <img src="https://th.bing.com/th/id/OIP.kXXwovEGjwTDtk4GEtbX4QHaLF?w=202&h=302&c=7&r=0&o=7&cb=ucfimg2&dpr=1.5&pid=1.7&rm=3&ucfimg=1" alt=""/>
+               <h3>Sarthak Sharma</h3>
+               <h4>full steck developer</h4>
+               <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="card">
+
+               <img src="https://th.bing.com/th/id/OIP.kXXwovEGjwTDtk4GEtbX4QHaLF?w=202&h=302&c=7&r=0&o=7&cb=ucfimg2&dpr=1.5&pid=1.7&rm=3&ucfimg=1" alt=""/>
+               <h3>Sarthak Sharma</h3>
+               <h4>full steck developer</h4>
+               <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="card">
+
+               <img src="https://th.bing.com/th/id/OIP.kXXwovEGjwTDtk4GEtbX4QHaLF?w=202&h=302&c=7&r=0&o=7&cb=ucfimg2&dpr=1.5&pid=1.7&rm=3&ucfimg=1" alt=""/>
+               <h3>Sarthak Sharma</h3>
+               <h4>full steck developer</h4>
+               <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="card">
+               <img src="https://th.bing.com/th/id/OIP.kXXwovEGjwTDtk4GEtbX4QHaLF?w=202&h=302&c=7&r=0&o=7&cb=ucfimg2&dpr=1.5&pid=1.7&rm=3&ucfimg=1" alt=""/>
+               <h3>Sarthak Sharma</h3>
+               <h4>full steck developer</h4>
+               <p>Lorem ipsum dolor sit amet.</p>
+          </div> -->
+     </main>
+</body>
+<script>
+  const users = [
+  {
+    fullname: "Alice Johnson",
+    username: "alice123",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    profession: "Software Engineer",
+    description: "Alice loves coding and building innovative web apps.",
+    tags: ["JavaScript", "React", "Web Development"]
+  },
+  {
+    fullname: "Bob Smith",
+    username: "bob_the_builder",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    profession: "Architect",
+    description: "Bob designs sustainable and modern architecture.",
+    tags: ["Design", "Architecture", "Sustainability"]
+  },
+  {
+    fullname: "Charlie Brown",
+    username: "charlie89",
+    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    profession: "Graphic Designer",
+    description: "Charlie creates eye-catching designs for brands.",
+    tags: ["Photoshop", "Illustrator", "Branding"]
+  },
+  {
+    fullname: "Diana King",
+    username: "diana.k",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    profession: "Content Writer",
+    description: "Diana writes engaging content for blogs and websites.",
+    tags: ["Writing", "SEO", "Marketing"]
+  },
+  {
+    fullname: "Eric Turner",
+    username: "eric2025",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    profession: "Data Analyst",
+    description: "Eric loves working with data to uncover insights.",
+    tags: ["Data Analysis", "Python", "SQL"]
+  }
+];
+sum='';
+users.forEach(function(elem) {
+sum=sum+` <div class="card">
+
+               <img src="${elem.image}" alt=""/>
+               <h3>${elem.fullname}</h3>
+               <h4>${elem.profession}</h4>
+               <p>${elem.description}</p>
+               </div>`
+          });
+const main=document.querySelector('main');
+main.innerHTML=sum;
+// console.log(sum);
+</script>
+</html>

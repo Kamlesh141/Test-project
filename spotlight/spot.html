@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     *{
+          padding: 0px;
+margin: 0px; box-sizing: border-box;   
+ }
+ body{
+     background: url("https://images.pexels.com/photos/34610053/pexels-photo-34610053.jpeg");
+     /* display: grid;
+     place-content: center; */
+     width:100%;
+     height:100%;
+background-color: black;
+background-size: cover;
+background-position: center;
+ }
+ .box{
+     width:100vw;
+     height:100vh;
+background:radial-gradient(150px at var(--x) var(--y),rgba(223, 207, 207, 0.913),rgba(71, 66, 66, 0.893));}
+:root{
+     --x:300px;
+     --y:300px;
+}
+</style>
+<body>
+     <div class="box">
+     </div>
+</body>
+<script>
+     addEventListener("mousemove",(t)=>{
+console.log(t.clientX,t.clientY);
+document.body.style.setProperty("--x",t.clientX+'px');
+document.body.style.setProperty("--y",t.clientY+'px');
+     })
+</script>
+</html>
