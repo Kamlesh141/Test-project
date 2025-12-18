@@ -17,11 +17,13 @@
 <h2 class="po">Portfolio</h2>
           </div>
           <div class="p2">
-               <a href="#">Home</a>
+             
+<a href="#">Home</a>
                <a href="#">About</a>
                <a href="#">Skill</a>
                <a href="#">Portfolio</a>
                <a href="#">Contact</a>
+               <a href="#">service</a>
           </div>
           <i class="ri-menu-3-line" class="menu"></i>
           </div>          
@@ -30,9 +32,11 @@
                     <div class="l1">
 
                          <p class="hello">Hello,It's Me</p>
-                         <h2 class="john">John Kendric</h2>
+                         <h2 class="john">Kamlesh</h2>
                          <h4 class="And">And I'm a <span style="color:cyan;">Froentend Developer</span></h4>
-                         <p class="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis neque fuga cumque quidem beatae sequi nobis. Provident magnam quis quidem!</p>
+                         <p class="Lorem">I build interactive and responsive web experiences as a Frontend Developer. 
+I specialize in creating clean, user-friendly interfaces using HTML, CSS, JavaScript, and modern frameworks like React.js. 
+My goal is to turn ideas into seamless digital experiences that are not only visually appealing but also highly functional across all devices.</p>
                          <div class="icon">
                               <a href="http://"><i class="ri-facebook-circle-line"></i></a>
                               <a href=""><i class="ri-twitter-fill"></i></a>
@@ -48,7 +52,7 @@
           </div>
           <div class="right">
 <div class="img">
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Qv5s5REahX2Vcj11jPnU1ibiEUfTc-VMAQ&s"  alt=""/>
+     <img src="kaml.jpg" alt=""/>
 </div>
           </div>
           </div>
@@ -97,109 +101,43 @@
                </div>
                <p id="bbtt"> click</p>
                </nav>
-               
                <!-- <button class="bbtt">lick</button> -->
           </div>
           <div class="pr1">
                <div class="kk">
-
                     <button class="yy">click</button>
                </div>
           </div>
           <div class="pr1">
+               <div class="main">
+                    <p class="song">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ut.</p>
+                    <div class="outer">
+                    </div>
+                    <div class="d0">
+                         <div class="inner">0%</div>
+                         <h3 class="click">click</h3>
+                    </div>
+               </div>
+          </div>
+          <div class="pr1">
+               <div class="clock">
+                    <h1 onclick=clock()>dfg</h1>
+               </div>
           </div>
           <div class="pr1"></div>
-          <div class="pr1"></div>
+     </div>
+     <div class="form">
+           <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="7" placeholder="Enter your message" required></textarea><br><br>
+        <button type="submit" id="sbt">Submit</button> 
+    </form>
      </div>
      </div>
 </body>
-<script>
-          const imp = document.querySelector("#inpu");
-          const b = document.querySelector("#btn");
-          const c = document.querySelector("#io");
-          b.addEventListener("click", () => {
-               let f = imp.value.trim();
-               if (!f) {
-                    alert("Please enter a value!");
-                    return;
-               }
-               c.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${f}`;
-               c.alt = `QR code for ${f}`;
-               });
-
-
-
-               var arr=[
-     {
- Name:"CSK",
- color:"yellow",
- Trophy:"4",
- bg:"pink",
-     },
-      {
- Name:"RCB",
- color:"red",
- Trophy:"1",
- bg:"blue",
-     },
-      {
- Name:"MI",
- color:"blue",
- Trophy:"7",
- bg:"pink",
-     },
-      {
- Name:"PNB",
- color:"red",
- Trophy:"0",
- bg:"tomato",
-     },
-      {
- Name:"SRH",
- color:"Orange",
- Trophy:"1",
- bg:"skyblue",
-     },
-      {
- Name:"RJ",
- color:"pink",
- Trophy:"0",
- bg:"cadetblue",
-     },
-]
-const a=document.querySelector('#bbtt');
-const yu=document.querySelector('.box');
-const nav=document.querySelector('nav');
-console.log(nav);
-
-a.addEventListener('click',()=>
-{
-     var winner=arr[Math.floor(Math.random()*arr.length)];     
-     yu.style.backgroundColor=winner.color;
-     yu.innerHTML=winner.Name;
-     nav.style.backgroundColor=winner.bg;
-})
-
-</script>
-<script>
-     const zx=document.querySelector(".yy");
-     const jk=document.querySelector(".kk");
-zx.addEventListener('click',()=>{
-     var dvv=document.createElement('div');
-     var x=Math.random()*100;
-     var y=Math.random()*100;
-     var t1=Math.floor(Math.random()*265);
-     var t2=Math.floor(Math.random()*265);
-     var t3=Math.floor(Math.random()*265);
-     dvv.style.width='50px';
-     dvv.style.height='50px';
-     dvv.style.left=x+'%';
-     dvv.style.top=y+'%';
-     dvv.style.rotate=y+'deg';
-     dvv.style.position='absolute';
-     dvv.style.backgroundColor = `rgb(${t1}, ${t2}, ${t3})`;
-     dvv.style.zIndex='8'
-     jk.appendChild(dvv);
-})
-</script>
+<script src="script.js"></script>
 </html>
