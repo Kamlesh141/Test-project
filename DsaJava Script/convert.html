@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>Convert Km to meter</h1>
+     <input type="number" id="data"/>
+     <button onclick=convert()>convert</button>
+     <h3 id="result"></h3>
+</body>
+<script>
+     function convert(){
+  var x=document.getElementById('data').value;
+     var y=1000;
+     var z=y*x
+     document.getElementById('result').innerHTML=z+'meters';
+     }
+   
+</script>
+</html>
