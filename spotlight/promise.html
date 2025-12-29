@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website</title>
+
+<link rel="stylesheet" href="second.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+<style>
+     *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+</style>
 <body>
-     
-</body>
-<script>
+<div class="con">
+     <h2 class="po">Portfolio</h2>
+
+     <div class="p2">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skill</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Service</a>
+          <a href="#">Contact</a>
+     </div>
+
+     <i class="ri-menu-3-line menu" id="menuBtn"></i>
+</div>
+
+<div class="side-menu" id="sideMenu">
+     <i class="ri-close-line close" id="closeBtn"></i>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Skill</a>
+     <a href="#">Portfolio</a>
+     <a href="#">Service</a>
+     <a href="#">Contact</a>
+</div>
+
+<div class="header">
+     <div class="left">
+          <div class="l1">
+               <p class="hello">Hello, It's Me</p>
+               <h2 class="john">Kamlesh</h2>
+               <h4 class="And">And I'm a <span>Frontend Developer</span></h4>
+               <p class="Lorem">
+                    I build interactive and responsive web experiences using
+                    HTML, CSS, JavaScript
+               </p>
+
+               <div class="icon">
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+               </div>
+
+               <button class="btn">Download CV</button>
+          </div>
+     </div>
+
+     <div class="right">
+          <div class="img">
+               <img src="kaml.jpg" alt="">
+          </div>
+     </div>
+</div>
+
+<script src="script.js">
+     const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+const closeBtn = document.getElementById("closeBtn");
+
+menuBtn.onclick = () => {
+     sideMenu.style.right = "0";
+};
+
+closeBtn.onclick = () => {
+     sideMenu.style.right = "-100%";
+};
 
 </script>
+</body>
 </html>

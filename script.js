@@ -1,11 +1,28 @@
+function topnavpar(){
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+const closeBtn = document.getElementById("closeBtn");
+
+menuBtn.onclick = () => {
+     sideMenu.style.right = "0";
+};
+
+closeBtn.onclick = () => {
+     sideMenu.style.right = "800%";
+};
+
+
+}
+topnavpar();
+
 addEventListener("mousemove",(e)=>{
-console.log(e.clientX);
-console.log(e.clientY);
+     console.log(e.clientX);
+     console.log(e.clientY);
 document.body.style.setProperty("--x",e.clientX+'px');
 document.body.style.setProperty("--y",e.clientY+'px');
      })
-
-      const imp = document.querySelector("#inpu");
+     function Qrpaper(){
+const imp = document.querySelector("#inpu");
           const b = document.querySelector("#btn");
           const c = document.querySelector("#io");
           b.addEventListener("click", () => {
@@ -18,9 +35,10 @@ document.body.style.setProperty("--y",e.clientY+'px');
                c.alt = `QR code for ${f}`;
                });
 
-
-
-               var arr=[
+     }
+     Qrpaper()
+function colorpaper(){
+  var arr=[
      {
  Name:"CSK",
  color:"yellow",
@@ -70,9 +88,11 @@ a.addEventListener('click',()=>
      yu.innerHTML=winner.Name;
      nav.style.backgroundColor=winner.bg;
 })
-
-
-     const zx=document.querySelector(".yy");
+}
+colorpaper();
+             
+function boxpaper(){
+ const zx=document.querySelector(".yy");
      const jk=document.querySelector(".kk");
 zx.addEventListener('click',()=>{
      var dvv=document.createElement('div');
@@ -91,24 +111,49 @@ zx.addEventListener('click',()=>{
      dvv.style.zIndex='8'
      jk.appendChild(dvv);
 })
+}
+boxpaper()
+
+function download(){
 const outer=document.querySelector('.outer');
 const inner=document.querySelector('.inner');
 const click=document.querySelector('.click');
-let g=0;
+console.log(outer,inner,click);
+let c=0
 click.addEventListener('click',()=>{
-    click.style.pointerEvents = 'none';
-    let num=Math.floor(Math.random() *100)+50;
-    var stop=setInterval(() => {
-         g++;
-         inner.innerHTML=g+'%'
-         outer.style.width=g+'%'
-         console.log(g)
-     },num);
-     setTimeout(() => {
-          clearInterval(stop);
-          click.style.opacity='0.5';
-          console.log("second"+num/100);
-   },num*100);
-    console.log(num);
+     click.style.pointerEvents='none'
+     var stop=setInterval(()=>{
+          outer.style.width=c+'%';
+          c++;
+          inner.innerHTML=c+'%';
+          if(c<=20)
+               {
+                    inner.style.color='red';
+               outer.style.backgroundColor='red';
+               outer.border='white';
+          }
+         else if(c<=80){
+                    inner.style.color='black';
+               outer.border='white';
 
+               outer.style.backgroundColor='white';
+
+          }
+          else if(c<=99){
+               outer.border='white';
+                    inner.style.color='green';
+               outer.style.backgroundColor='green';
+               click.innerHTML='Full Charge'
+               click.style.color='green'
+
+          }
+     },50)
+     setTimeout(()=>{
+          clearInterval(stop);
+          // inner.innerHTML=c+'%';
+          // click.disabled=true;
+     },5000)
 })
+}
+download();
+    
