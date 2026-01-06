@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div class="main">
+          <form>
+               <input type="text" id="nm" placeholder="enter user name"/>
+               <input type="email" id="em" placeholder="Email"/>
+               <input type="text"  id="ms" placeholder="Message"/>
+               <button class="btn">submit</button>
+               <p id="res"></p>
+          </form>
+     </div>
+</body>
+
+  <script>
+  const btn = document.querySelector('.btn');  
+  const nm = document.querySelector('#nm');  
+  const em = document.querySelector('#em');  
+  const ms = document.querySelector('#ms');  
+  const res = document.querySelector('#res');  
+
+  btn.addEventListener('click', (t) => {
+    t.preventDefault();    
+
+    var n = nm.value;
+    var e = em.value;
+    var m = ms.value;
+
+    // Display values
+    res.textContent = n + "   " + e + "   " + m;  
+
+    // Check empty fields
+    if(n === '' || e === '' || m === ''){
+      console.log('Please enter all fields');
+    } else {
+      // Check message length
+      if(m.length < 10){
+        console.log("Minimum 10 characters for message");
+      } else {
+        console.log("All good!");
+      }
+    }
+  });  
+</script>
+
+  
+
+</html>
