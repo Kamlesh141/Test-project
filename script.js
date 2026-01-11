@@ -160,3 +160,23 @@ click.addEventListener('click',()=>{
 }
 download();
     
+// function animated(){
+// const msg2=document.querySelector('.And');
+// const str2=msg2.textContent;
+// // alert(str);
+// let i=0;
+// function animated()
+// {
+//     const a=msg2.textContent=str2.substring(0,i);
+//     // console.log(a);
+//     i++;
+//     if(i>str2.length)
+//     {
+//         i=0;
+//     }
+//     setTimeout(animated,100);
+// }
+// animated();
+// // alert(str.length);     
+// }
+// animated();
