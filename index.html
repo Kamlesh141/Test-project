@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Portfolio Website</title>
-     <link rel="stylesheet" href="second.css">
+     <link rel="stylesheet" href="dem.css">
      <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -12,22 +12,22 @@
 </head>
 <body>    
      <div class="container">
-         <div class="con">
+         <div id="con">
      <h2 class="po">Portfolio</h2>
      <div class="p2">
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Skill</a>
+          <a href="#hd1">Skill</a>
           <a href="#">Portfolio</a>
           <a href="#">Service</a>
-          <a href="#">Contact</a>
+          <a href="#form">Contact</a>
      </div>
 
      <i class="ri-menu-3-line menu" id="menuBtn"></i>
 </div>
 <div class="side-menu" id="sideMenu">
      <i class="ri-close-line close" id="closeBtn"></i>
-     <a href="#">Home</a>
+     <a href="#con">Home</a>
      <a href="#">About</a>
      <a href="#">Skill</a>
      <a href="#">Portfolio</a>
@@ -46,11 +46,23 @@
                </p>
 
                <div class="icon">
-                    <i class="ri-facebook-circle-line"></i>
-                    <i class="ri-twitter-fill"></i>
-                    <i class="ri-instagram-line"></i>
-                    <i class="ri-linkedin-box-fill"></i>
-               </div>
+  <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+    <i class="ri-facebook-circle-line"></i>
+  </a>
+
+  <a href="https://github.com/Kamlesh141/" target="_blank" aria-label="GitHub">
+    <i class="ri-github-fill"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+    <i class="ri-instagram-line"></i>
+  </a>
+
+  <a href="https://in.linkedin.com/" target="_blank" aria-label="LinkedIn">
+    <i class="ri-linkedin-box-fill"></i>
+  </a>
+</div>
+
                <button class="btn">Download CV</button>
           </div>
      </div>
@@ -60,7 +72,7 @@
           </div>
      </div>
 </div>
-          <h1 class="hd1">My SKILL</h1>
+          <h1 id="hd1">My SKILL</h1>
           <div class="myskill">
             <div class="skill">
                     <img src="https://th.bing.com/th/id/OIP.o9KlUo2gl1_IL-8ZKu1JygHaHa?w=179&h=150&c=6&o=7&cb=ucfimgc2&dpr=1.5&pid=1.7&rm=3" alt="" />
@@ -100,11 +112,12 @@
      </div>               
           </div>
           <div class="pr1">
-               <nav>
-<div class="box">1
+               <div class="van">
+
+                    <div class="box">1
+                    </div>
+                    <p id="bbtt"> click</p>
                </div>
-               <p id="bbtt"> click</p>
-               </nav>
                <!-- <button class="bbtt">lick</button> -->
           </div>
           <div class="pr1">
@@ -126,7 +139,7 @@
           
           </div>
      </div>
-     <div class="form">
+     <div id="form">
            <form action="#" method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
