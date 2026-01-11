@@ -5,10 +5,13 @@ const closeBtn = document.getElementById("closeBtn");
 
 menuBtn.onclick = () => {
      sideMenu.style.right = "0";
+     // sideMenu.style.display='block'
 };
 
 closeBtn.onclick = () => {
      sideMenu.style.right = "800%";
+     // sideMenu.style.display='none'
+
 };
 
 
@@ -96,8 +99,8 @@ function boxpaper(){
      const jk=document.querySelector(".kk");
 zx.addEventListener('click',()=>{
      var dvv=document.createElement('div');
-     var x=Math.random()*90;
-     var y=Math.random()*90;
+     var x=Math.random()*80;
+     var y=Math.random()*80;
      var t1=Math.floor(Math.random()*265);
      var t2=Math.floor(Math.random()*265);
      var t3=Math.floor(Math.random()*265);
