@@ -92,7 +92,8 @@ body{
   display:inline-block;
   font-size:36px;
 }
-.And span{color:cyan;}
+
+.And {color:cyan;}
 .Lorem{color:white;margin:15px 0;}
 
 .icon{
@@ -129,12 +130,12 @@ body{
   overflow:hidden;
   border:4px solid cyan;
 }
-
 .img img{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter: brightness(1.04) contrast(1.06) saturate(1.09);
+  filter: brightness(1.08) contrast(1.08) saturate(1.12);
+  transition: filter 0.3s ease;
 }
 
 /* ================= SKILLS ================= */
@@ -328,7 +329,9 @@ body{
   .p2{
     display:none;
   }
-.side-menu a{font-size: 8vw;}
+.side-menu a{font-size: 8vw;
+
+}
 
 .close{font-size: 10vw;}
   .menu {
@@ -339,15 +342,15 @@ body{
     flex-direction:column;
     text-align:center;
     justify-content: center;
-    background-color: silver;
+    /* background-color: silver; */
   }
 .john{
   margin-bottom: 30px;
 }
-#icon{
+.icon{
   /* text-align: center; */
   justify-content: center;
-  margin-bottom:20px ;
+  margin-bottom:1.9em ;
 }
   .left,.right{
     width:100%;
