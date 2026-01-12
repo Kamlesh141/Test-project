@@ -322,12 +322,12 @@ body{
   cursor:pointer;
 }
 
-/* ================= MOBILE ================= */
+
 @media (max-width:1024px) {
   #con{
   }
   .img{
-    filter: brightness(115%) contrast(100%);
+    filter: brightness(100%) ;
   }
   .p2{
     display: none;
@@ -360,10 +360,9 @@ body{
   }
   #btn{
   font-size: 1em;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   font-weight: bold;
-  margin-left: 15vw;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   }
   #io{
     margin-left: 9vw;
