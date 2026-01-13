@@ -390,7 +390,6 @@ body{
 .side-menu a{font-size: 8vw;
 
 }
-
 .close{font-size: 10vw;}
   .menu {
     display:block;
@@ -476,14 +475,18 @@ flex-direction: column;
   }
   .click{
 width:30vw;
+text-align: center;
   }
   #form{
     width:90%;
   }
   label input{
-    font-size: 1em;
+    font-size: 0.8em;
   }
   #name{
-    font-size: 1em;
+    font-size: 1.5em;
+  }
+  #sbt{
+    font-size: 1.3em;
   }
 }
