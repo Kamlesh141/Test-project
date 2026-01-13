@@ -9,7 +9,6 @@ body{
   background:#f5f7f8;
 }
 
-/* ================= NAVBAR ================= */
 #con{
   background:cadetblue;
   display:flex;
@@ -65,7 +64,6 @@ body{
   /* display:none; */
 }
 
-/* ================= HEADER ================= */
 
 .header{
   display:flex;
@@ -120,7 +118,7 @@ body{
   cursor:pointer;
 }
 
-/* ================= IMAGE ================= */
+
 
 .img{
   width:300px;
@@ -138,7 +136,7 @@ body{
   transition: filter 0.3s ease;
 }
 
-/* ================= SKILLS ================= */
+
 
 #hd1{
   text-align:center;
@@ -172,7 +170,7 @@ body{
   font-weight:bold;
 }
 
-/* ================= PROJECT ================= */
+
 
 .MP{
   text-align:center;
@@ -294,7 +292,7 @@ body{
                     display: flex;
                     justify-content: space-between;
                }
-/* ================= FORM ================= */
+
 
 #form{
   background:white;
