@@ -5,7 +5,7 @@
   font-family: system-ui, sans-serif;
 }
 ::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 body{
   background:#f5f7f8;
@@ -83,7 +83,6 @@ body{
 .l1{
   position:static;
 }
-
 .hello{color:white;font-size:22px;}
 .john{
   background:aqua;
@@ -102,6 +101,7 @@ body{
 }
 .icon a{
   text-decoration: none;
+  margin-bottom: 10px;
 }
 .icon i{
   border:2px solid cyan;
@@ -109,7 +109,6 @@ body{
   padding:6px;
   color:cyan;
 }
-
 .btn{
   padding:10px 25px;
   background:cyan;
@@ -118,7 +117,9 @@ body{
   font-weight:bold;
   cursor:pointer;
 }
-
+a{
+  text-decoration: none;
+}
 
 
 .img{
@@ -303,13 +304,11 @@ body{
   border-radius:20px;
   box-shadow:0 5px 20px rgba(0,0,0,0.15);
 }
-
 #name,#email,#message{
   width:100%;
   padding:10px;
   margin:8px 0;
 }
-
 #sbt{
   width:100%;
   padding:10px;
@@ -329,7 +328,6 @@ textarea{
 .click{
   font-weight: bold;
 }
-
 @media (max-width:1024px) {
   #con{
   }
@@ -395,13 +393,11 @@ textarea{
     display:none;
   }
 .side-menu a{font-size: 8vw;
-
 }
 .close{font-size: 10vw;}
   .menu {
     display:block;
   }
-
   .header{
     flex-direction:column;
     text-align:center;
