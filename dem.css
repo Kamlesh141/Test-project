@@ -4,7 +4,9 @@
   box-sizing:border-box;
   font-family: system-ui, sans-serif;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 body{
   background:#f5f7f8;
 }
@@ -90,7 +92,6 @@ body{
   display:inline-block;
   font-size:36px;
 }
-
 .And {color:cyan;}
 .Lorem{color:white;margin:15px 0;}
 
@@ -293,8 +294,8 @@ body{
                     justify-content: space-between;
                }
 
-
-#form{
+#form
+{
   background:white;
   max-width:600px;
   margin:80px auto;
@@ -319,7 +320,15 @@ body{
   font-size:16px;
   cursor:pointer;
 }
-
+label,input{
+  font-size: 1.1em;
+}
+textarea{
+  font-size: 1.1em;
+}
+.click{
+  font-weight: bold;
+}
 
 @media (max-width:1024px) {
   #con{
